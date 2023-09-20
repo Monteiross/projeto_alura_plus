@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    /*Colors*/
+    --color-background: #00030C;
+    --color-text: #FFF;
+    --color-text2: #C0C0C0;
+    --color-button: #167BF7;
+    /*Fonts*/
+    --font-principal: 'Inter', sans-serif;
+
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-principal);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.principal {
+    background-image: url(../assets/Background_page1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__titulo {
+    font-weight: 700;
+    font-size: 1.63rem;
+}
+
+
+.container__botao {
+    background-color: var(--color-button);
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 1em;
+    color: var(--color-text);
+    display: block;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: var(--color-text) solid 1px;
+}
+
+.container__aviso {
+    color: var(--color-text2);
+    font-size: 0.75rem;
+}
