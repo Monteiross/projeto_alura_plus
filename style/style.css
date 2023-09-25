@@ -66,7 +66,11 @@ body {
 }
 
 .principal__img {
-    margin: 1em 0 2em 0;
+    margin: 1em 0 2em 0em;
+}
+
+.conteudo__img {
+    margin-left: 20%;
 }
 
 .secundario {
@@ -94,9 +98,12 @@ body {
 
 .terceario {
     align-items: center;
-    padding: 10em;
 }
 
+.terceario__conteudo {
+    margin-left: 5em;
+    display: block;
+}
 
 .terceario__botao {
     background-color: var(--color-button);
@@ -111,10 +118,57 @@ body {
     align-items: center;
 }
 
+.quinario {
+    align-items: center;
+    text-align: center;
+    height: 50vh;
+}
+
 .quinario__container {
-    height: 75vh;
+
     display: grid;
     grid-template-columns: 33% 33% 33%;
     align-items: center;
     text-align: center;
+}
+
+.quinario__conteudo {
+    margin: 1em;
+    color: var(--color-text);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+footer {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rodape__img {
+    margin: 3rem;
+}
+
+.rodape__link {
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0.5em;
+
+}
+
+.rodape__rodape {
+    padding: 2em;
+    display: block;
+}
+
+.rodape__texto {
+    padding: 1em;
+    display: block;
+    font-size: 14px;
+    color: var(--color-text2);
+    opacity: 0.8;
 }
