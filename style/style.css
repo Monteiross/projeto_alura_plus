@@ -6,6 +6,7 @@
     --color-text: #FFF;
     --color-text2: #C0C0C0;
     --color-button: #167BF7;
+    --color-burron--hover: #4391f0;
     /*Fonts*/
     --font-principal: 'Inter', sans-serif;
 
@@ -55,6 +56,11 @@ body {
     display: block;
 }
 
+.principal__botao:hover {
+    background-color: var(--color-burron--hover);
+    color: var(--color-text2);
+}
+
 .botao_secundario {
     background-color: transparent;
     border: var(--color-text) solid 1px;
@@ -71,6 +77,10 @@ body {
 
 .conteudo__img {
     margin-left: 20%;
+}
+
+.conteudo__img-dir {
+    padding: 6em;
 }
 
 .secundario {
@@ -101,17 +111,18 @@ body {
 }
 
 .terceario__conteudo {
-    margin-left: 5em;
-    display: block;
+    margin-left: 20%;
+    display: inline-block;
 }
 
 .terceario__botao {
+    display: inline-block;
+    margin: 0;
     background-color: var(--color-button);
     border-radius: 8px;
     text-decoration: none;
     padding: 1em;
     color: var(--color-text);
-
 }
 
 .quaternario {
@@ -119,17 +130,14 @@ body {
 }
 
 .quinario {
-    align-items: center;
     text-align: center;
     height: 50vh;
 }
 
 .quinario__container {
+    display: flex;
+    justify-content: center;
 
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    align-items: center;
-    text-align: center;
 }
 
 .quinario__conteudo {
@@ -151,13 +159,21 @@ footer {
     margin: 3rem;
 }
 
-.rodape__link {
+.rodape__navegacao {
+    display: flex;
+    justify-content: center;
+}
+
+.rodape__link a {
     text-decoration: none;
     color: var(--color-text);
     font-size: 16px;
     font-weight: 400;
     padding: 0.5em;
+}
 
+.rodape__link a:hover {
+    color: var(--color-button);
 }
 
 .rodape__rodape {
