@@ -131,7 +131,7 @@ body {
 
 .quinario {
     text-align: center;
-    height: 50vh;
+
 }
 
 .quinario__container {
@@ -190,15 +190,13 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    body {
-        display: block;
-    }
 
     .container {
         display: block;
         background-image: none;
         text-align: center;
         align-items: center;
+        margin: 2em;
     }
 
     .principal {
@@ -211,7 +209,7 @@ footer {
     }
 
     .principal__caixa {
-        margin: 2em 2em;
+        margin: 0;
         text-align: center;
     }
 
@@ -235,6 +233,7 @@ footer {
 
     .quinario__container {
         flex-direction: column;
+
     }
 
     footer {
@@ -243,8 +242,17 @@ footer {
         text-align: center;
     }
 
+    .rodape__navegacao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1em;
+    }
 
-
+    .conteudo__titulo {
+        margin: 0;
+        font-size: 36px;
+    }
 }
 
     
